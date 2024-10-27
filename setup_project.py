@@ -82,10 +82,10 @@ def sanitize_project_name(project_name):
 
 def main():
     # The absolute path to the project directory
-    path_to_project = os.path.dirname(os.path.realpath(__file__))
-
+    path_to_project = ('/hpc/jdow403/chaste_jdow403/src/projects/GI-tissue-simulations/')
+    
     # Identify the name of the project
-    project_name = os.path.basename(path_to_project)
+    project_name = 'GI-tissue-simulations'
 
     # Paths to the CMakeLists.txt files
     base_cmakelists = os.path.join(path_to_project, 'CMakeLists.txt')
